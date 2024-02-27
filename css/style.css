@@ -1,11 +1,56 @@
-div {
-	width: 600px;
-	height: 1067px;
-	background: url(../images/20230829_125319-ezgif.com-video-to-gif-converter.gif);
-	box-shadow: inset 0px 0px 20px 25px rgb(22, 22, 22);
-}
+
   body{
 	display: flex;
 	justify-content: center;
-	background-color: rgb(22, 22, 22);
+	background-color: black;
+
+	/*font info */
+	font-family: 'Times New Roman', Times, serif, sans-serif;
+	font-style: normal;
+  }
+  img{
+	max-width: 100%;
+	height: auto;
+  }
+  .enter-splash{
+	height: 100%;
+  }
+  .entry-button{
+	/*text positioning */
+	position: absolute;
+	color: aliceblue;
+	top: 10%;
+	left: 40%;
+	transform: translate(-50%, -50%) scale(0.79, 1);
+	background-color: black;
+	padding: 0px 100px;
+	font-stretch:condensed;
+	text-align: left;
+	width: 100%;
+	text-shadow:0px 0px 4px yellow;
+	line-height: 90%;
+
+	/*text styling*/
+	font-size: 5em;
+
+  }
+  .subtitle{
+	position: absolute;
+	color: aliceblue;
+	top: 21%;
+	left: 20%;
+	transform: translate(-50%, -50%) scale(0.79, 1);
+	background-color: black;
+	padding: 0px 100px;
+	margin-top: 0px;
+	padding-top: 0px;
+	font-stretch:condensed;
+	text-align: left;
+	width: 50%;
+	text-shadow:0px 0px 4px yellow;
+	font-size: 3em;
+	line-height: 90%;
+  }
+  #entry-wrapper{
+	position: relative;
   }
