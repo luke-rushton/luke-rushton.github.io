@@ -12,6 +12,11 @@
 	max-width: 100%;
 	height: auto;
   }
+  a{
+	text-decoration: none;
+	display: block;
+	padding: 0;
+  }
   .enter-splash{
 	/*height: 100%;c*/
 	width: 100%;
