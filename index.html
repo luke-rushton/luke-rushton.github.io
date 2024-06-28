@@ -3,16 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>perlin testing</title>
-    <script src='perlin.js'></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Submarine Adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+	<!--<script type="module" src="/scripts.js"></script>-->
+    
+  <script type="module" crossorigin src="/assets/index-Ba8sBjHR.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-ChHXSEsR.css">
 </head>
 <body>
-
-
-
-
-    <canvas id='canvas'></canvas>
-    <script src='animation.js'></script>
-    <script src='draw-perlin.js'></script>
+    <header>
+        <div id="title-div">
+            <h1 class="animate__animated animate__slower animate__heartBeat animate__infinite">Submarine Adventure!</h1>
+        </div>
+    </header>
+    <main>
+        <div id="game">
+            <canvas id="game-canvas"></canvas>
+            <div tabindex="-1" id="start-screen">
+                <h2 id="start-title">Press SPACE to start!</h2>
+            </div>
+        </div>
+        <div id="game-info">
+            <p>Your underwater adventure has gone terribly wrong! Lost in a deep underwater cave with little chance of escape! How long can you survive?</p>
+            <h2>Controls:</h2>
+            <p>W to float up</p>
+            <p>S to float down</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; - 2024 For Educational Use Only</p>
+    </footer>
+</body>
 </html>
