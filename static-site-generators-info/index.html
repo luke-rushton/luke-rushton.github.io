@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static site generators</title>
+    <link rel="stylesheet" href="normalize-fwd.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script defer src="nav-menu.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Static Site Generators</h1>
+        <nav>
+            <button id="nav-toggle"><img id="toggle-icon" src="down-arrow.png" alt="down-arrow"></button>
+            <ul id="nav-menu">
+                <li><a href="#what-section">What is an SSG?</a></li>
+                <li><a href="#markdown-section">A Rundown of Markdown</a></li>
+                <li><a href="#common-use-section">Common Uses for an SSG</a></li>
+                <li><a href="#why-section">Why Use an SSG</a></li>
+                <li><a href="#vs-section">SSG vs Dynamic/CMS</a></li>
+                <li><a href="#con-section">Pros</a></li>
+                <li><a href="#con-section">Cons</a></li>
+                <li><a href="#popular-section">What are the Most Popular SSGs?</a></li>
+                <li><a href="#process-section">Process for Generating a Site</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="site-main" id="site-main">
+        <section id="what-section">
+            <h2>What is a Static Site Generator?</h2>
+            <p>A SSG is a software tool that is used to create websites. They create HTML, CSS and Javascript files that are necessary to create a site, using markdown and a set of templates. The use of a Static Site Generator automates the task of coding individual HTML pages. The site is rendered on the server side, and makes static sites faster than dynamic sites. SSGs are an alternative to CMS (Content Management Systems). They hold differing abilities of functionality, ease, security, and speed.
+            </p>
+        </section>
+         <section id="markdown-section">
+            <h2>A Rundown of Markdown</h2>
+            <p>
+                Markdown is a key component of Static Site Generators.
+                Markdown uses special characters to describe page stylings, which the SSG can convert into HTML. Markdown is also widely used elsewhere on the web, such as in forum posts and Reddit comments. 
+            </p>
+            <img src="markdown-example.png" alt="example of markdown text">
+            <figure>Example of text styled with markdown</figure>
+            <p>
+               Markdown converts 1 to 1 with HTML semantics. This allows the Static Site Generator to quickly convert any markdown files into an HTML page. Due to this 1 to 1 conversion, it is also possible for the SSG to apply CSS stylings directly to the markdown. 
+            </p>
+            <p>The following is an incomplete list of markdown - HTML conversions.</p>
+            <table>
+                <tr>
+                    <th>Markdown</th>
+                    <th>HTML</th>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td>&#60;h1&#62;</td>
+                </tr>
+                <tr>
+                    <td>##</td>
+                    <td>&#60;h2&#62;</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>&#60;strong&#62;</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>&#60;em&#62;</td>
+                </tr>
+                <tr>
+                    <td>`</td>
+                    <td>&#60;code&#62;</td>
+                </tr>
+            </table>
+            <p>You can find a full list of markdown tags on their site: <a href="https://www.markdownguide.org/">markdown guide</a></p>
+        </section>
+        <section id="common-use-section">
+            <h2>Common Uses for Static Site Generators</h2>
+            <p>
+                Since Static Site Generators are static, there are admittedly a fairly narrow range of use cases. However, the use cases that do exist are pretty widespread. The most common form of SSG generated websites are documentation. Especially as software developers, this is something we will have seen. This sort of documentation usually provides API information, as well as FAQs, tutorials, and other learning resources. Documentation like this is also very common to find internally in medium to large companies, documenting all the inner workings of their various tools and products.
+            </p>
+            <p>A number of sites that could have been created with an SSG:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://gsap.com/resources/">GSAP Docs</a></li>
+                <li><a href="https://nextjs.org/docs">Next.js Docs</a></li>
+            </ul>
+        </section>
+        <section id="why-section">
+            <h2>Why Use a Static Site Generator?</h2>
+            <p>You can make the custom template structure or use one provided by the site's generator and then you enter the information that you want to be formatted by the static generator. This allows you to streamline the process of creating multiple pages with the same template. The documents and content gets organized by the structure laid out and creates a library of documentation that can be easily accessed. The content can be quickly maintained by changing the markdown pages that will target all the pages instead of having to change every single page manually with CSS. Changing one single page is not time consuming, however if you need to change 100 pages then this has an obvious disadvantage to the developers time.
+            </p>
+            <img src="/images/example-of-the-process.png" alt="process example">
+        </section>
+        <section id="vs-section">
+            <h2>Static Site Generator vs Dynamic/CMS</h2>
+        <table>
+                    <tr>
+                        <th></th>
+                        <th>Static Site Generators</th>
+                        <th>Dynamic/CMS</th>
+                    </tr>
+                    <tr>
+                        <td>Efficiency</td>
+                        <td>High</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>Security Risks</td>
+                        <td>None</td>
+                        <td>Some</td>
+                    </tr>
+                    <tr>
+                        <td>Ease of Use</td>
+                        <td>Experience Required</td>
+                        <td>Minimal Experience</td>
+                    </tr>
+                    <tr>
+                        <td>Functionality</td>
+                        <td>Basic</td>
+                        <td>Flexible</td>
+                    </tr>
+            </table>
+            <p>There is a significant difference between static and dynamic sites in load speed. Static sites pre compiled, and are very efficient. Dynamic sites are lower in efficiency as the site needs to compile information at load time. As a static site is, simply put, static, it has fewer security risks. 
+            <p>Dynamic sites are vulnerable due to their complex back ends and a higher level of user interaction. Static sites are built with minimal back end work which keeps the level of security high compare to a dynamic site which has more of a complex back-end work that will allow more vulnerabilities to the site's security. </p>
+            <p>Static Site Generators have files that are pre built that do not take in user input. SSGs can be tricky as they require some developer knowledge. Using Static Site Generators requires some developer knowledge because of its use of markdown which can cause some difficulties for a person with no front-end developer experience. </p>
+            <p>With a dynamic site such as Wordpress, the user can buy a site and start blogging rather easily. When using a SSG, functionality is very limited. They create basic sites for Wikipedia type information, and do not have a very wide breadth of abilities. When using a dynamic site, there is the ability to integrate shops, dynamic elements, user comments, forms and more.</p>
+            
+        </section>
+        <section id="pro-section">
+            <h2>Pros</h2>
+            <p>There are quite a few pros to using a static site instead of a dynamiic site. It all depends on if the pros of using a Static Site Generator outweighs the cons, and if a static site fits your needs. SSGs are lightweight and fast. There are no special requirements for hosting. The information is pre-compiled so therefore the site is much faster than dynamic sites. 
+            <p>A static site is inherently secure. This is useful because there is no backend for malicious users to exploit.</p>
+            <p>Costs are kept low, since there is no need for large server processing or live monitoring.</p>
+            <p>There is a good flexibility in styles, as you are able to build your own styles and templates.</p>
+            <p>As much is done by the SSG, people can focus on creating content, instead of coding. This increases productivity and the ability to quickly get your information online.</p>
+        </section>
+        <section id="con-section">
+            <h2>Cons</h2>
+            <p>A static site is information based and there is no user interaction capabilities. To change designs and styling needs, it needs to be done with markdown files which can be challenging for a user with little knowledge. A static site cannot gather real time information to adapt to the user such as locations and languages. For example, users from other countries will get the same version of information. The site cannot be changed into a different language or be modified for the users preferences. The information can only be displayed in the language it was created in, therefore limiting the amount of users visiting the site. Static sites cannot have e-commerce or live feed features. For a site to take user input and digest that information requires a site to become dynamic and would require more extensive backend work. 
+            </p>
+        </section>
+        <section id="popular-section">
+            <h2>What are the Most Popular SSGs?</h2>
+            <p>Some popular Static Site Generators are Hexo, Gatsby, Next.js, Nuxt.js, and Hugo. We will demonstrate the demo using Hugo later.
+              Hugo is written in Go and is optimized for speed, easy use and configurability. It relies on Markdown files with front matter for meta data. It is good for working with many kinds of websites including blogs, display sites, etc.
+                </p>
+        </section>
+        <section id="process-section">
+            <h2>Process for Generating a Site</h2>
+                <p><strong>1. Install SSG</strong></p>
+                <p>Hugo website: <a href="https://gohugo.io/">https://gohugo.io/</a></p>
+                <p><a href="https://gohugo.io/installation/linux/
+                    ">gohugo.io/installation</a>
+                </p>
+                <p><strong>Package Managers</strong></p>
+                    
+                <p>Snap is a free and open-source package manager for Linux. Available for most distributions, snap packages are simple to install and are automatically updated. The Hugo snap package is strictly confined. This snap package runs in complete isolation, up to a minimal access level that's deemed always safe. The sites you create and build must be located within your home directory, or on removable media.</p>
+            
+                   <p><strong>To install the extended edition of Hugo:sudo snap install Hugo</strong></p> 
+                  
+                    <img src="images/01.png" alt="This is img 01.">
+
+                
+                <p><strong>2. Choose a Theme</strong></p>
+                <p>Theme: <a href="https://themes.gohugo.io/themes/lightbi-hugo/
+                    ">themes.gohugo.io</a>
+                </p>
+                <p><strong>3. Create a Site</strong></p>
+                <p>Hugo new site (<em>name of site</em>)
+                   For example: My new site name is <strong>'testing'.</strong>
+                </p>
+                
+                <img src="images/02.png" alt="This is img 02.">
+                <p>Sudo apt-get and install Git, and then Git init</p>
+                <img src="images/03.png" alt="This is img 03.">
+                <p>Clone the Lighbi theme into the themes directory, adding it to your project as a Git submodule.</p>
+                <img src="images/04.png" alt="This is img 04.">
+                <p>Append a line to the site configuration file, indicating the current theme.
+                Then start Hugo's development server to view the site.
+                </p>
+                <img src="images/05.png" alt="This is img 05.">
+                <p><strong>4. Create Content</strong></p>
+                <img src="images/06.png" alt="This is img 06.">
+                <p>Now we have our posts, we can edit content now. This is a demo for adding a cat picture using markdown.</p>
+               
+                <img src="images/07.png" alt="This is img 07.">
+                
+                
+                <p><strong>5. Generate website</strong></p>
+                   <p>local url: <a href="http://localhost:1313/">http://localhost:1313/</a></p>
+                   <img src="images/09.png" alt="This is img 09.">
+                   <img src="images/08.png" alt="This is img 08.">
+                
+
+
+
+        </section>
+    </main>
+    <footer>
+        <p>@ FWD38 For Educational Purposes Only</p>
+        <ul class="footer-section">
+            <li><a href="lauracochen.com">Laura</a></li>
+            <li><a href="index.html">Colin</a></li>
+            <li><a href="yining.ca">Yining</a></li>
+            <li><a href="lukerushton.com">Luke</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
